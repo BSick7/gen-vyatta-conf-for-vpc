@@ -8,5 +8,4 @@ The following options are supported:
  -f, --interface       Vyatta Interface device
  -i, --input           Input filepath
  -o, --output          Output filepath
-
 ```
