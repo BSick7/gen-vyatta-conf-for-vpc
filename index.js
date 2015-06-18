@@ -5,5 +5,9 @@ var fs = require('fs'),
 
 var inputs = input.get();
 var result = lib.generate(inputs);
-fs.writeFileSync(path.join('out', 'vyatta.config'), result.config);
-fs.writeFileSync(path.join('out', 'setup.sh'), result.setup);
+
+var outDir = path.join(__dirname, 'out');
+if (!fs.existsSync(outDir))
+    fs.mkdirSync(outDir);
+fs.writeFileSync(path.join(outDir, 'vyatta.config'), result.config);
+fs.writeFileSync(path.join(outDir, 'setup.sh'), result.setup);
