@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/kikumoto/gen-vyatta-conf-for-vpc/issues"
   },
-  "homepage": "https://github.com/kikumoto/gen-vyatta-conf-for-vpc"
+  "homepage": "https://github.com/kikumoto/gen-vyatta-conf-for-vpc",
+  "devDependencies": {
+    "stdio": "^0.2.7"
+  }
 }
