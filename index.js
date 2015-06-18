@@ -5,11 +5,11 @@ var stdio = require('stdio'),
     lib = require('./lib');
 
 var ops = stdio.getopt({
-    "local_subnet": {key: "l", mandatory: true, description: "Vyatta Local subnet"},
-    "remote_subnet": {key: "r", mandatory: true, description: "Vyatta Remote subnet"},
-    "interface": {key: "f", description: "Vyatta Interface device"},
-    "input": {key: "i", description: "Input filepath"},
-    "output": {key: "o", description: "Output filepath"}
+    "local_subnet": {key: "l", args: 1, mandatory: true, description: "Vyatta Local subnet"},
+    "remote_subnet": {key: "r", args: 1, mandatory: true, description: "Vyatta Remote subnet"},
+    "interface": {key: "f", args: 1, description: "Vyatta Interface device"},
+    "input": {key: "i", args: 1, description: "Input filepath"},
+    "output": {key: "o", args: 1, description: "Output filepath"}
 });
 
 var inputs = input.get(ops);
